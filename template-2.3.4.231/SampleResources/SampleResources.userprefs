@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{05F54EAA-4320-418D-A96A-3E0614C40EB7}|Default">
+  <MonoDevelop.Ide.ItemProperties.SampleResources.Droid PreferredExecutionTarget="Android.Nexus_S_API_22" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
