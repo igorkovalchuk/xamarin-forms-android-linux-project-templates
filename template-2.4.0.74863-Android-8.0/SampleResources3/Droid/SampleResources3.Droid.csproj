@@ -17,6 +17,15 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+
+    <!-- hardware (ARMv7-A) and an emulator -->
+    <AndroidSupportedAbis>armeabi-v7a,x86</AndroidSupportedAbis>
+
+    <!-- emulator only -->
+    <!--
+        <AndroidSupportedAbis>x86</AndroidSupportedAbis>
+    -->
+
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
