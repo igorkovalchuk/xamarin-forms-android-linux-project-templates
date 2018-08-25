@@ -1,10 +1,10 @@
 # xamarin-forms-android-linux-project-templates
 
-Sample N1:
+Build sample using the template:
 
 https://github.com/igorkovalchuk/xamarin-forms-android-linux-project-templates/tree/master/template-3.1.0.637273-8.1-ns2.0/SampleDotNet1
 
-Sample N2:
+Build sample using the ConferenceVision application:
 
 https://github.com/igorkovalchuk/ConferenceVision/tree/linux-build
 
