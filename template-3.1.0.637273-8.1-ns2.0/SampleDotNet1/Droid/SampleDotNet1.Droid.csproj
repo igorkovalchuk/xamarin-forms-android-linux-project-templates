@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard2.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard2.0\Xamarin.Forms.props')" />
+
+  <PropertyGroup>
+    <AndroidSdkDirectory>/home/my_xamarin_user/java/sdk</AndroidSdkDirectory>
+  </PropertyGroup>
+
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -27,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+
+    <AndroidSupportedAbis>x86,armeabi-v7a</AndroidSupportedAbis>
+
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +45,27 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+
+    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+
+    <AotAssemblies>false</AotAssemblies>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+
+<!--
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a;armeabi</AndroidSupportedAbis>
+-->
+
+    <!-- Warning: please add more Abis here -->
+    <AndroidSupportedAbis>x86,armeabi-v7a</AndroidSupportedAbis>
+
+<!--
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/my_path/my_xamarin_keystore.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>my_store_pass</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>my_alias</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>my_key_pass</AndroidSigningKeyPass>
+-->
+
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
