@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+<!--
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+-->
+  </PropertyGroup>
+
+<!--
+  <ItemGroup>
+    <None Remove="App.xaml" />
+    <None Remove="SampleDotNet1Page.xaml" />
+  </ItemGroup>
+-->
+
+<!--
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="SampleDotNet1Page.xaml" />
+  </ItemGroup>
+-->
+  
+<!--  
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+-->
+  
+  <ItemGroup>
+    <Compile Update="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SampleDotNet1Page.xaml.cs">
+      <DependentUpon>SampleDotNet1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Localization\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+</Project>
