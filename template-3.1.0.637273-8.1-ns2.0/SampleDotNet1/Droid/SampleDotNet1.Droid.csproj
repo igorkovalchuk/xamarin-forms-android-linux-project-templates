@@ -3,7 +3,7 @@
   <Import Project="..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard2.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.637273\build\netstandard2.0\Xamarin.Forms.props')" />
 
   <PropertyGroup>
-    <AndroidSdkDirectory>/home/my_xamarin_user/java/sdk</AndroidSdkDirectory>
+    <AndroidSdkDirectory>/home/myhomedir/Android/Sdk</AndroidSdkDirectory>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -24,6 +24,12 @@
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  
+	  <!--
+          Android 4.4 fix : https://github.com/xamarin/xamarin-android/issues/3314
+	  <AndroidAapt2LinkExtraArgs>- - no-version-vectors</AndroidAapt2LinkExtraArgs>
+	  -->
+	  
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -33,7 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
 
-    <AndroidSupportedAbis>x86,armeabi-v7a</AndroidSupportedAbis>
+    <AndroidSupportedAbis>x86,x86_64,armeabi-v7a</AndroidSupportedAbis>
 
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">

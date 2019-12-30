@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SampleDotNet1" x:Class="SampleDotNet1.SampleDotNet1Page">
-    <Label x:Name="ourLabel" Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SampleDotNet1" x:Class="SampleDotNet1.SampleDotNet1Page"
+ xmlns:resources="clr-namespace:SampleDotNet1.Localization">
+
+    <Label x:Name="ourLabel" Text="{x:Static resources:AppResources.LocalizedLabel}" VerticalOptions="Center" HorizontalOptions="Center" />
+
 </ContentPage>
