@@ -15,13 +15,13 @@ APP_DROID_CSPROJ=$APP_DROID_DIR/SampleResources.Android.csproj
 APP_DROID_PREFIX=$APP_DROID_DIR/bin/Debug/$APP_NAME
 
 # This is an old name of variable. In this project we don't have the PCL.
-PCL_NAME=SampleDotNet1
+PCL_NAME=SampleResources
 
 PCL_DIR=$APP_DIR/SampleResources
 PCL_CSPROJ=$PCL_DIR/$PCL_NAME.csproj
 PCL_PREFIX=$PCL_DIR/bin/Debug/netstandard2.0/$PCL_NAME
 
-ANDROID_OVERRIDE_DIR=/data/data/$APP_PACKAGE/files/.__override__
+ANDROID_OVERRIDE_DIR=/data/user/0/com.example.sampleresources/files/.__override__
 
 ANDROID_SDK=/home/myhomedir/Android/Sdk
 
