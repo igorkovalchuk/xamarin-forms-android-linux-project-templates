@@ -1,5 +1,7 @@
 # xamarin-forms-android-linux-project-templates
 
+It is rather samples than templates.
+
 Build sample using the template:
 
 https://github.com/igorkovalchuk/xamarin-forms-android-linux-project-templates/tree/master/template-3.1.0.637273-8.1-ns2.0/SampleDotNet1
